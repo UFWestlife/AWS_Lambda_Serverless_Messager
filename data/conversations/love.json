@@ -1,0 +1,16 @@
+{
+	"id": "love",
+	"participants": ["Zun Wang", "Xin Geng"],
+	"messages": [
+		{
+			"sender": "Zun Wang",
+			"time": 1512246299194,
+			"message": "Xin is the most beautiful and lovely girl in the world!"
+		},
+		{
+			"sender": "Xin Geng",
+			"time": 1512247299194,
+			"message": "讨厌啦~"
+		}
+	]
+}
