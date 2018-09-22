@@ -6,14 +6,14 @@ var dynamo = new AWS.DynamoDB();
 
 exports.handler = function (event, context, callback) {
     dynamo.putItem({
-        TableName: 'Chat-Messages',
+        TableName: event.tables.messages,
         Item: {
             ConversationId: {S: event.id},
             Timestamp: {
                 N: "" + new Date().getTime()
             },
             Message: {S: event.message},
-            Sender: {S: 'Student'}
+            Sender: {S: event.cognitoUsername}
         }
     }, function(err, data) {
         if(err !== null) {
